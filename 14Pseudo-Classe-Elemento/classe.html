@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+    <style>
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            color: orange;
+            display: block;
+        }
+        div:hover {
+            color: red;
+        }
+        div > p:hover {
+            color: aqua;
+        }
+        .selecionado:hover {
+            color: lightgreen;
+        }
+        p:hover {
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="selecionado">Elemento Escondido</h1>
+    <h2 class="selecionado">Encontre o elemento escondido</h2>
+    <p class="selecionado">Abaixo teremos um elemento escondido em algum lugar.</p>
+    <div>
+        Será que é aqui?
+        <p>Você achou o elemento escondido!!</p>
+    </div>
+    <p><strong>Fim do programa</strong></p>
+</body>
+</html>

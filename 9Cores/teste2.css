@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(-45deg, #D8AE8B, #FAF5D8);
+    background-attachment: fixed;
+    text-align: justify;
+}
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #8d725b81;
+    width: 600px;
+    padding: 10px;
+    margin: auto;   
+}
+h1 {
+    text-align: center;
+    color: #F2AB37;
+    text-shadow: 2px 2px 2px #7e581c8a;
+}
+h2 {
+    color: #CD5F2A;
+    text-shadow: 1px 1px 1px #833e1b85;
+}
+p {
+    color: #21181B;
+}

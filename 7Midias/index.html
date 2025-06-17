@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abra este site em dispositivos dierentes ou mude o tamanho da janela do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>Para reproduzir áudios nós usamos a tag &lt;audio&gt;</p>
+    <p>Use também os parametros: "preload", "autoplay" e "controls"</p>
+    <audio src="audios/audio.mp3" preload="metadata" autoplay controls></audio>
+    <h1>Reproduzindo Vídeos</h1>
+    <p>Abaixo temos um vídeo, para colocar vídeos em nosso site podemos usar a tag &lt;video&gt;</p>
+    <video src="videos/video-carro.mp4" width="400" controls poster="imagens/poster.jpg" loop></video>
+    <p>Para mudar a capa do video, nós usamos o parâmetro "poster" dentro da tag &lt;video&gt;</p>
+    <h1>Vídeos com hospedagem externa</h1>
+    <p>Abaixo temos um vídeo que está hospedado no YouTube, ou seja, não gasta tráfego de banda do nosso site.</p>
+    <p>Vídeo do melhor professor de tecnologia de todos os tempos!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?si=tezeegLqju5u1eRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

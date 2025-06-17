@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: limegreen;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: rgb(30, 128, 30);
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+            content: "[link]";
+            color: rgba(34, 128, 34, 0.63);
+        }
+        a::before {
+            content: "[link]";
+            color: rgba(34, 128, 34, 0.63);
+        }
+        .especial {
+            background-color: rgba(255, 0, 234, 0.295);
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados:</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Link do YouTube</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" class="especial">Link do Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">Link do Facebook</a></li>
+    </ul>
+</body>
+</html>
