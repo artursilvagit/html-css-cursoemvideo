@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-color: purple;
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+        }
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-color: yellow;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            height: 200px;
+            width: 400px;
+        }
+
+        /* 
+            Explicação:
+            Para centralizar um elemento verticalmente, primeiro ele deve estar dentro de um conteiner, por exemplo, um elemento <h1> que está dentro do body, o body vai ser o conteiner. O próximo passo é definir uma posição relativa ao conteiner, geralmente não é necessário fazer isto pois na maioria das vezes ja é definido como padrão. Depois precisamos definir uma posição absoluta ao elemento, esta posição é absoluta em relação a posição do container, ou seja, a posição do elemento sempre vai ser definida com base na posição do conteiner. Depois precisamos dizer que a posição top (top: %;) vai ser 50%, pois 50% é exatamente a metade da altura container, usando a mesma lógica nós adicionamos tambem 50% na posição left (left: %;) pois 50% é a metade do comprimento do container. Com isso tudo feito, o elemento está centralizado porém o seu ponto de origem está na ponta esquerda superior, o que faz o elemento não ficar centralizado corretamente. Para concertar isso nós devemos adicionar uma declaração de transform, e depois dos dois pontos nós adicionamos "translate" isso vai mudar diretamente a posição do elemento. adicionamos dentro dos parenteses: -50%, -50%, isso vai fazer o elemento ficar centralizado corretamente.
+        */
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
