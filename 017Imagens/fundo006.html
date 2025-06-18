@@ -6,15 +6,30 @@
     <title>Posicionamento</title>
     <style>
         body {
-            height: 100hv;
-            background-color: rgb(17, 17, 17);
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+            background: rgb(17, 17, 17) url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
+            /* 
+                height: 100hv;
+                background-color: rgb(17, 17, 17);
+                background-image: url(imagens/wallpaper002.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            */
+
+            /* 
+                Shorthand para Background 
+                A ordem é:
+                color > image > position > repeat > size
+                > attachment
+                
+                OBSERVAÇÃO!!!
+                background-size não funciona dentro do shorthand, precisa ser usado separadamente
+            */
         }
         main {
-            width: 500px;
+            max-width: 500px;
             margin: auto;
             padding: 10px;
             background-color: white;
