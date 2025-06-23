@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo das Tabelas</title>
+    <link rel="stylesheet" href="004.css">
+</head>
+<body>
+    <h1>Escopo das Tabelas:</h1>
+    <table>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+            <tr>
+                <td>--- --- ---</td>
+                <td class="numero">--- ---</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <th>--- ---</th>
+        </tfoot>
+    </table>
+    <p>Nas Tabelas é muito importante nós definirmos um escopo para cada título de dados, nós precisamos indicar onde está localizado os dados dos títulos (se está em baixo ou se está do lado), por exemplo, nesta tabela temos o título "Estado", os dados deste título (os nomes dos estados) estão em baixo, ou seja, na mesma coluna, então o escopo vai ser "col". Caso os dados estivessem ao lado como por exemplo em "Total de Habitantes" então o escopo seria "row". Para definir o escopo nós usamos dentro da tag &lt;th&gt; o parâmetro "scope" e colocamos se é "col" ou "row".</p>
+</body>
+</html>

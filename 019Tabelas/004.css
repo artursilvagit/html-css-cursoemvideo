@@ -1,0 +1,37 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+}
+p {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 400px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.226);
+    margin: auto;
+}
+td {
+    background-color: white;
+}
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+th {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+.numero {
+    text-align: right;
+}
