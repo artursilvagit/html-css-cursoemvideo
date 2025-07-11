@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px 50px;
+}
+td {
+    font-weight: bold;
+}
+tr {
+    background-color: gray;
+}
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+th {
+    background-color: rgb(99, 99, 99);
+    color: white;
+    position: sticky;
+    left: -1px;
+}
+
+div#container {
+    overflow-x: auto;
+}
