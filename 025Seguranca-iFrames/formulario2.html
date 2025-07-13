@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança iFrames</title>
+</head>
+<body>
+    <p>Digite uma palavra: </p>
+    <input id="inputText" type="text" placeholder="Clique para digitar...">
+    <input type="button" value="Enviar" onclick="clicou()">
+
+    <script>
+        function clicou() {
+            const inputText = document.querySelector("#inputText")
+            const novoParagrafo = document.createElement("p")
+            novoParagrafo.textContent = inputText.value
+
+            document.body.appendChild(novoParagrafo)
+        }
+    </script>
+</body>
+</html>

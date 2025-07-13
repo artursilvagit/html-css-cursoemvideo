@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando em iFrames</title>
+    <style>
+        body {
+            background-image: linear-gradient(45deg, black, brown);
+            height: 96vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: white;
+        }
+        main {
+            background-color: white;
+            color: black;
+            max-width: 600px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        iframe {
+            width: 590px;
+            height: 490px;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(97, 0, 0);
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(189, 130, 130);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navegando em iFrames</h1>
+    </header>
+    <main>
+        <p>Faça a sua escolha e clique em um link!</p>
+        <a href="pag1.html" target="iframe">Primeiro link</a>
+        <a href="pag2.html" target="iframe">Segundo link</a>
+        <a href="pag3.html" target="iframe">Terceiro link</a>
+        <p>O resultado irá aparecer abaixo.</p>
+        <iframe name="iframe" srcdoc="<h1>Selecione alguma das opções acima!</h1>"><p>O seu navegador não tem compatibilidade com esta função.</p></iframe>
+    </main>
+</body>
+</html>

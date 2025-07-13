@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança iFrames</title>
+</head>
+<body>
+    <h1>Segurança em iFrames</h1>
+    <p>Abaixo temos uma simples interação com JavaScript</p>
+    <iframe src="formulario2.html" referrerpolicy="no-referrer"></iframe>
+    <p>Para bloquearmos interações com scripts dentro dos iFrames, nós podemos usar o parâmetro "sandbox" e dentro das aspas colocar "sandbox</p>
+    <p>Fazendo isso, toda e qualquer interação do site dentro do iFrame é bloqueada, desde formularios até scripts</p>
+    <p>Para desbloquear o uso de alguma função em específico, podemos mudar a palavra "sandbox" dentro do parâmetro sandbox para por exemplo: "allow-scripts" ou "allow-forms"</p>
+    <h2>Notas importantes</h2>
+    <p>Também é importante usar outro parâmetro, o "referrerpolicy", com ele nós podemos ou não permitir que o site dentro do iFrame colete informações do usuário para exibir anúncios e coisas do tipo. Para bloquear esta função nós colocamos: referrerpolicy="no-referrer"</p>
+    <h2>Resumo</h2>
+    <p>É muito importante tomar estas medidas para quando usamos iFrames com sites de terceiros que não sabemos a procedencia, ou seja, que talvez tenha algum tipo de virús ou esquema para coletar dados dos usuários, devemos ter em mente que NÓS somos resposáveis pelo nosso próprio site, então sempre revise conteúdos de terceiros e bloqueie funcionalidades caso seja necessário</p>
+</body>
+</html>
