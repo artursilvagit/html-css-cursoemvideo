@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades em Formulários</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+        input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funcionalidades em Formulários</h1>
+    <form action="form.js">
+        <section id="perguntaNome">
+            <label for="nome">Seu nome: </label>
+            <input type="text" id="nome" placeholder="Digite se nome" required minlength="3" maxlength="20" size="20">
+        </section>
+        <section id="perguntaIdade">
+            <label for="idade">Sua idade: </label>
+            <input type="number" id="idade" placeholder="Digite sua idade" required maxlength="3" size="15">
+        </section>
+        <section id="perguntaSexo">
+            <label for="sexo">Seu sexo: </label>
+            <input type="text" id="sexo" placeholder="Digite seu sexo" required minlength="3" maxlength="20" size="20">
+        </section>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

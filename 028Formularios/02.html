@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET e POST</title>
+</head>
+<body>
+    <h1>Método GET e POST</h1>
+    <p>Observe o formulário abaixo: </p>
+    <form action="cadastro.js" method="get">
+        <p><label for="nome">Digite seu nome: </label><input type="text" id="nome"></p>
+        <p><label for="idade">Digite sua idade: </label><input type="text" id="idade"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <p>Devemos saber que existem dois métodos para formulários, o método "get" e também o "post"</p>
+    <p>O formulário de cima foi configurado com o metodo "get", este método é ultilizado para informações que não são sensíveis, como por exemplo o nome e a idade de uma pessoa. Este método não pode ser usado junto de informações sensiveis como senhas, cpf ou endereço pois ele revela mais facilmente estes dados. Também devemos ter em mente que ele tem um limite de 3 mil bites para o envio de informações.</p>
+    <p>Já o método post, ele esconde os dados da URL tendo um pouco mais de segurança e o limite de envio de arquivos é bem maior.</p>
+</body>
+</html>
