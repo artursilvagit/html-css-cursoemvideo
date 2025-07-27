@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color, Range e File</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #idColor {
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color, Range e File em Formulários</h1>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>Color, Range e File</legend>
+            <label for="idColor">Cor</label>
+            <input type="color" name="nameColor" id="idColor"><br>
+            <label for="idRange">Mude o volume da música</label>
+            <input type="range" name="nameRange" id="idRange" min="0" max="10"><br>
+            <label for="idFile">Escolha um arquivo</label>
+            <input type="file" name="nameFile" id="idFile">
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <h2>Notas Importantes **</h2>
+    <p>Usando o input do tipo RANGE nós devemos atribuir mais 2 parâmetros a ele, o min="" e também o max="", são básicamente o valor mínimo e máximo que o range vai ter.</p>
+    <p>Também é importante lembras que ao usar o input do tipo "file", o formulário deve ser do método POST pois o método GET possui um limite de envio de dados (3 mil bytes, que equivale a 3 kilobytes).</p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        fieldset input {
+            margin: 7px;
+        }
+        input {
+            margin: 10px 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="form.php" method="get">
+        <fieldset>
+            <legend>Radio Button</legend>
+            <p>Escolha uma banda:</p>
+            <input type="radio" name="bandaPreferida" value="metallica" id="radio-metallica"><label for="radio-metallica">Metallica</label><br>
+            <input type="radio" name="bandaPreferida" value="system-of-a-down" id="radio-system-of-a-down"><label for="radio-system-of-a-down">System Of A Down</label><br>
+            <input type="radio" name="bandaPreferida" value="charlie-brown-jr" id="radio-charlie-brown-jr"><label for="radio-charlie-brown-jr">Charlie Brown JR</label><br>
+            <input type="radio" name="bandaPreferida" value="avenged-sevenfold" id="radio-avenged-sevenfold"><label for="radio-avenged-sevenfold">Avenged Sevenfold</label>
+        </fieldset>
+        <fieldset>
+            <legend>Check Box</legend>
+            <p>Escolha as bandas que você gosta:</p>
+            <input type="checkbox" name="name-check-metellica" id="id-check-metallica" value="metallica"><label for="id-check-metallica">Metallica</label><br>
+            <input type="checkbox" name="name-check-system-of-a-down" id="id-check-system-of-a-down" value="system-of-a-down"><label for="id-check-system-of-a-down">System Of A Down</label><br>
+            <input type="checkbox" name="name-check-charlie-brown-jr" id="id-check-charlie-brown-jr" value="charlie-brown-jr"><label for="id-check-charlie-brown-jr">Charlie Brown JR</label><br>
+            <input type="checkbox" name="name-check-avenged-sevenfold" id="id-check-avenged-sevenfold" value="avenged-sevenfold"><label for="id-check-avenged-sevenfold">Avenged Sevenfold</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <section id="sectionNome">
+                <label for="inputNome">Nome</label>
+                <input type="text" name="nome" id="inputNome" placeholder="Your name here">
+            </section>
+            <section id="email">
+                <label for="inputEmail">Email</label>
+                <input type="email" name="email" id="inputEmail" placeholder="email@example.com">
+            </section>
+            <section id="telefone">
+                <label for="inputTelefone">Telefone</label>
+                <input type="tel" name="telefone" id="inputTelefone" placeholder="XX X XXXX XXXX">
+            </section>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
