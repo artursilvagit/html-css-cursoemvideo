@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, DataList e TextArea</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input, select {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select, DataList e TextArea</h1>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>Select, DataList e TextArea</legend>
+            <label for="idSelect">Selecione um Estado</label>
+            <select name="nameSelect" id="idSelect">
+                <option value="" selected>*** Escolha ***</option>
+                <optgroup>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select><br>
+            <label for="idProfissao">Digite ou escolha a sua profissão</label>
+            <input type="text" name="nameProfissao" id="idProfissao" list="listProfissao"><br>
+            <datalist id="listProfissao">
+                <option value="Programador">Programador</option>
+                <option value="Cozinheiro">Cozinheiro</option>
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Arquiteto">Arquiteto</option>
+                <option value="Mecânico">Mecânico</option>
+            </datalist>
+            <label for="idText">Escreva a sua Mensagem: </label><br>
+            <textarea name="nameText" id="idText" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
